@@ -1,0 +1,75 @@
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+}
+html,body{
+height: 100%;
+width: 100%;
+}
+#main{
+width: 100%;
+}
+#container-first{
+height: 100vh;
+width: 100%;
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 50px;
+}
+.box{
+    width: 350px;
+    height: 450px;
+    background-color: aqua;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.cards{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: voyage;
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    background-color: bisque;
+    position: absolute;
+}
+button{
+    padding: 10px 22px;
+    font-size: 20px;
+    font-family: voyage;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+}
+.sec-card{
+    background-color: rgb(117, 190, 254);
+    animation-name: slid;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    animation-iteration-count: inherit;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+    0%{
+        transform: translate(0%, 0);
+    }
+    100%{
+        transform: translate(-100%, 0);
+    }
+}
+@keyframes Revslide {
+    0%{
+        transform: translate(-100%, 0);
+    }
+    100%{
+        transform: translate(0%, 0);
+    }
+}
